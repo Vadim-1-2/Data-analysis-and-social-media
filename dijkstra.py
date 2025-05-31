@@ -4,10 +4,7 @@ import math
 
 def dijkstra(graph, start, is_adjacency_matrix=False):
     # Определение количества вершин
-    if is_adjacency_matrix:
-        num_vertices = len(graph)
-    else:
-        num_vertices = len(graph)
+    num_vertices = len(graph)
 
     # Инициализация расстояний
     distances = {v: math.inf for v in range(num_vertices)}
